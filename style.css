@@ -1,0 +1,183 @@
+html {
+    height: fit-content;
+}
+
+li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+body {
+    background-color: #e9967a;
+    padding: 0px;
+    margin: 0px;
+}
+
+ul {
+    display: none;
+    list-style: none;
+    padding: 10px;
+    margin: 8px;
+}
+
+a {
+    text-decoration: none;
+    padding: 10px;
+    color: #1b199d;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: darksalmon;
+}
+
+.header-logo {
+    margin: auto;
+}
+
+.list-menu {
+    display: flex;
+}
+
+.item-menu {
+    margin: 0 20px;
+    position: relative;
+
+}
+
+.link-menu {
+    font-size: 20px;
+}
+
+.header-icon {
+    margin: auto;
+}
+
+.btn-login {
+    padding: 10px 20px;
+    background-color: pink;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    color: #1b199d;
+    font-size: 15px;
+}
+
+.btn-login:hover {
+    background-color: #120ee7;
+    color: #fff;
+}
+
+.list-con {
+    position: absolute;
+    padding: 0;
+    display: none;
+    bottom: -140px;
+    left: -5px;
+    background-color: #e9967a;
+}
+
+.item-menu:hover .list-con {
+    display: block;
+}
+
+.item-con {
+    padding: 4px 0px;
+}
+
+.list-con.list1 {
+    width: 95px;
+}
+
+.list-con.list2 {
+    width: 101px;
+}
+
+.list-con.list3 {
+    width: 163px;
+}
+
+.slider img{
+    height: 50rem;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.section div {
+    padding: 20px 0;
+}
+
+.section a {
+    display: block;
+    height: 40px;
+    background-color: darksalmon;
+    width: -webkit-fill-available;
+}
+
+.section-menu a i {
+    margin-left: 10px;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.body-box {
+    width: 75%;
+    background-color: #ffffff;
+}
+
+.body-box img {
+    width: 400px;
+}
+
+.body-menu {
+    background-color: #e9967a;
+    width: 25%;
+    text-align: center;    
+}
+
+.body-box-con {
+    width: 100%;
+    display: flex;
+}
+
+.body-box-con div {
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.body-box-con img {
+    width: 282px;
+    height: 282px;
+}
+
+.body-menu .Search {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+.body-menu .List_menu {
+    font-size: 20px;
+}
+
+.body-menu .List_menu ul {
+    display: grid;
+    list-style-type: disc;
+}
+
+.body-box-con .btn-chitietsp{
+    color: #ce02bdf6;
+    border: 2px solid #e9967a;
+    background-color: #e9967a;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}

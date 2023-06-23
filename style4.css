@@ -1,0 +1,160 @@
+html {
+    height: fit-content;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    display: none;
+    list-style: none;
+    padding: 10px;
+    margin: 8px;
+}
+
+a {
+    text-decoration: none;
+    padding: 10px;
+    color: #1b199d;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #e9967a;
+}
+
+.header-logo {
+    margin: auto;
+}
+
+.list-menu {
+    display: flex;
+}
+
+.item-menu {
+    margin: 0 20px;
+    position: relative;
+}
+
+.link-menu {
+    font-size: 20px;
+    color: #1b199d;
+}
+
+.header-icon {
+    margin: auto;
+    display: flex;
+}
+
+.btn-login {
+    padding: 10px 20px;
+    background-color: pink;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    color: #1b199d;
+    font-size: 15px;
+    margin: 3px;
+}
+
+.btn-login:hover {
+    background-color: #120ee7;
+    color: #fff;
+}
+
+.list-con {
+    position: absolute;
+    padding: 0;
+    display: none;
+    bottom: -140px;
+    left: -5px;
+    background-color: #e9967a;
+}
+
+.item-menu:hover .list-con {
+    display: block;
+}
+
+.item-con {
+    padding: 4px 0px;
+}
+
+.list-con.list1 {
+    width: 95px;
+}
+
+.list-con.list2 {
+    width: 101px;
+}
+
+.list-con.list3 {
+    width: 163px;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    margin: 0 10rem;
+    padding: 80px 0px;
+}
+
+.section .head-qustion {
+    color: #e9967a;
+    width: 100%;
+    text-align: center;
+}
+
+.section .section-body {
+    box-sizing: border-box;
+    position: absolute;
+    left: 471px;
+    top: 241px;
+    border: 3px solid #e9967a;
+    border-radius: 160px;
+    padding: 36px 50px;
+    text-align: center;
+}
+
+.section-body.h1{
+    left: 110px;
+    top: 277px;
+}
+
+.section-body.h2{
+    left: 471px;
+    top: 277px;
+}
+
+.section-body.h3{
+    left: 831px;
+    top: 277px;
+}
+
+.section-body.h4{
+    left: 836px;
+    top: 650px;
+}
+
+.section-body.h5{
+    left: 471px;
+    top: 650px;
+}
+
+.section-body.h6{
+    left: 105px;
+    top: 650px;
+}
+
+.section-body img{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width: 220px;
+    height: 220px;
+    background-color: #ffffff;
+    border: 0px;
+}
+.section-body-text{
+    color: #e9967a;
+}

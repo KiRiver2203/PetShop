@@ -1,0 +1,132 @@
+html {
+    height: fit-content;
+}
+
+li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+ul {
+    display: none;
+    list-style: none;
+    padding: 0px;
+    margin: 8px;
+}
+
+a {
+    text-decoration: none;
+    padding: 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: darksalmon;
+}
+
+.header-logo {
+    margin: auto;
+}
+
+.list-menu {
+    display: flex;
+}
+
+.item-menu {
+    margin: 0 20px;
+    position: relative;
+
+}
+
+.link-menu {
+    font-size: 20px;
+}
+
+.header-icon {
+    margin: auto;
+}
+
+.btn-login {
+    padding: 10px 20px;
+    background-color: pink;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    color: #1b199d;
+    font-size: 15px;
+}
+
+.btn-login:hover {
+    background-color: #120ee7;
+    color: #fff;
+}
+
+.list-con {
+    position: absolute;
+    padding: 0;
+    display: none;
+    bottom: -140px;
+    left: -5px;
+    background-color: #e9967a;
+}
+
+.item-menu:hover .list-con {
+    display: block;
+}
+
+.item-con {
+    padding: 4px 0px;
+}
+
+.list-con.list1 {
+    width: 95px;
+}
+
+.list-con.list2 {
+    width: 101px;
+}
+
+.list-con.list3 {
+    width: 163px;
+}
+
+.section-body .muc-lhe{
+    display: flex;
+    width: 98%;
+    padding: 10px 10px;
+    margin: 0px 0px;
+}
+.section-body .lhecon{
+    border: 3px solid #e9967a;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: #120ee7;
+    padding: 45px;
+}
+
+section h1{
+    padding: 20px 0;
+    color: #e9967a;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    font-size: 40px;
+}
+
+.section-body h4{
+    text-align: center;
+}
+
+.section-body p{
+    font-size: 14px;
+    color: rgb(104, 104, 101);
+}
+
+.section-body a{
+    font-size: 14px;
+    color: rgb(104, 104, 101);
+}

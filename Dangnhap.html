@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Đăng nhập</title>
+        <link href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" rel="stylesheet">
+        <style>
+            body {
+                background-color: #f1f1f1;
+            }
+
+            .container {
+                background-color: #ffffff;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                padding: 20px;
+                margin: 50px auto;
+                width: 400px;
+            }
+
+            input[type=email],
+            input[type=password] {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+            }
+
+            button[type=submit] {
+                background-color: #4CAF50;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                width: 100%;
+            }
+
+            button[type=submit]:hover {
+                background-color: #45a049;
+            }
+
+            form i.fas {
+                position: absolute;
+                top: -36px;
+                left: 360px;
+                cursor: pointer;
+            }
+        </style>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                //$('#registrationForm'): Đoạn mã này chọn phần tử HTML có ID là "registrationForm". Điều này có thể là một thẻ <form> trong mã HTML của bạn.
+                //.on('submit', function (e) { ... }): Đoạn mã này gán một trình xử lý sự kiện cho sự kiện "submit" của form bằng cách sử dụng phương thức .on(). 
+                //Khi form được gửi đi, trình xử lý sự kiện này sẽ được kích hoạt.
+                $('#registrationForm').on('submit', function (e) {
+                    e.preventDefault(); // Ngăn chặn gửi form mặc định
+                    var email = $('#email').val();
+                    var password = $('#password').val();
+                    if (email.length > 0 && password.length > 0) {
+                        if (email === "admin@example.com" && password === "password") {
+                            // Kiểm tra thông tin đăng nhập
+                            alert("Đăng nhập thành công!");
+                            var url = "thucungsaungdangnhap.html";
+                            window.location.href = url;
+                        } else {
+                            alert("Email hoặc mật khẩu không chính xác. Vui lòng thử lại.");
+                        }
+                    } else {
+                        alert("Vui lòng điền đầy đủ thông tin.");
+                    }
+                });
+            });
+
+            function daoTT() {
+                var password = document.getElementById("password");
+                password.type = (password.type === "password") ? "text" : "password";
+            }
+        </script>
+    </head>
+
+<body>
+    <div class="container">
+        <h1>Đăng nhập</h1>
+        <form id="registrationForm">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required autocomplete="off" autofocus>
+            <label for="password">Mật khẩu:</label>
+            <input type="password" id="password" name="password" required>
+           
+            <input type="checkbox" id="ghinhotaikhoan" name="ghinhotaikhoan" required autocomplete="off" autofocus>
+            <label for="ghinhotaikhoan">ghi nho tai khoan:</label>
+            <i class="fas fa-eye" onclick="daoTT()"></i>
+            <button type="submit" name="btndangnhap" id="btndangnhap" value="nut">Đăng nhập</button>
+
+
+        </form>
+    </div>
+</body>
+
+</html>
